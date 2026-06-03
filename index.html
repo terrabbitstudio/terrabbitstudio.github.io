@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRプラス – 適時開示・決算AI要約 | 日本株IR速報</title>
+  <meta name="description" content="IRプラスは、東証上場企業の適時開示・決算情報をAIが要約してお届けするAndroidアプリです。" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      max-width: 900px;
+      padding: 48px 24px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+
+    .app-name {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .app-name span {
+      color: #60a5fa;
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 900px;
+      padding: 48px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (max-width: 640px) {
+      .hero { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .hero-text h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #94a3b8;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+    }
+
+    .badge img {
+      height: 56px;
+      border-radius: 8px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .features { grid-template-columns: 1fr; }
+    }
+
+    .feature-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .feature-card .icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #f1f5f9;
+    }
+
+    .feature-card p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #475569;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📊</div>
+    <div>
+      <div class="app-name">IR<span>プラス</span></div>
+      <div style="font-size:12px; color:#64748b;">日本株 適時開示・決算 AI 要約</div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <h1>東証の開示情報を<br><em>AIが即座に要約</em></h1>
+      <p>
+        適時開示・決算・株主優待・自社株買いなど、
+        TDnet の最新 IR を AI が要約してお届けします。
+        お気に入り銘柄への通知、タグフィルターで
+        気になる情報だけを素早くキャッチ。
+      </p>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=jp.irplus.app" target="_blank" rel="noopener">
+        <img src="https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png" alt="Google Play で手に入れよう" />
+      </a>
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>IR速報</h3>
+        <p>TDnet の開示情報を平日リアルタイムで取得・表示</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🤖</div>
+        <h3>AI 要約</h3>
+        <p>決算・適時開示の内容を AI が 3 行で要約</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔔</div>
+        <h3>銘柄通知</h3>
+        <p>お気に入り銘柄の新着開示をプッシュ通知</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🏷️</div>
+        <h3>タグフィルター</h3>
+        <p>上方修正・増配・自社株買いなどで絞り込み</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="/privacy-policy.html">プライバシーポリシー</a>
+      &nbsp;|&nbsp;
+      &copy; 2026 IRプラス
+    </p>
+  </footer>
+
+</body>
+</html>
